@@ -2,7 +2,7 @@
 import @openzeppelin/contract/access/Owner.sol
 pragma solidity 0.8.18;
 contract Person {
-    struct Person { // Structure de données
+    struct Person { // Structure de données et un com ici aussi
       string name;
       uint age;  
   }
