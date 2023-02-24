@@ -1,6 +1,7 @@
-// Import du smart contract "SimpleStorage"
 const SimpleStorage = artifacts.require("SimpleStorage");
-module.exports = (deployer) => {
- // Deployer le smart contract!
- deployer.deploy(SimpleStorage);
-} 
+const ComplexStorage = artifacts.require("ComplexStorage");
+
+module.exports = function(deployer) {
+  deployer.deploy(SimpleStorage);
+  deployer.deploy(ComplexStorage);
+};
